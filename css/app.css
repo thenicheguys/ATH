@@ -1,0 +1,836 @@
+
+@font-face {
+  font-family: "lakesideregular";
+  src: url("../fonts/lakeside.eot");
+  src: url("../fonts/lakeside.eot?#iefix") format("embedded-opentype"), url("../fonts/lakeside.woff2") format("woff2"), url("../fonts/lakeside.woff") format("woff"), url("../fonts/lakeside.ttf") format("truetype"), url("../fonts/lakeside.svg#lakesideregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?d3e4os');
+  src:  url('../fonts/icomoon/icomoon.eot?d3e4os#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?d3e4os') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?d3e4os') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?d3e4os#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-share2:before {
+  content: "\ea82";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+/* This font is replacing Montserrat Bold */
+
+@font-face {
+	font-family: 'Montserrat Light';
+	src: url('../fonts/montserrat/Montserrat-Light.eot');
+	src: local('../fonts/montserrat/Montserrat Light'), local('Montserrat-Light'),
+		url('../fonts/montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+		url('../fonts/montserrat/Montserrat-Light.woff') format('woff'),
+		url('../fonts/montserrat/Montserrat-Light.ttf') format('truetype'),
+		url('../fonts/montserrat/Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Black';
+	src: url('../fonts/../fonts/montserrat/Montserrat-Black.eot');
+	src: local('../fonts/montserrat/Montserrat Black'), local('Montserrat-Black'),
+		url('../fonts/montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+		url('../fonts/montserrat/Montserrat-Black.woff') format('woff'),
+		url('../fonts/montserrat/Montserrat-Black.ttf') format('truetype'),
+		url('../fonts/montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Hairline';
+	src: url('../fonts/montserrat/Montserrat-Hairline.eot');
+	src: local('../fonts/montserrat/Montserrat Hairline'), local('Montserrat-Hairline'),
+		url('../fonts/montserrat/Montserrat-Hairline.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat/Montserrat-Hairline.woff2') format('woff2'),
+		url('../fonts/montserrat/Montserrat-Hairline.woff') format('woff'),
+		url('../fonts/montserrat/Montserrat-Hairline.ttf') format('truetype'),
+		url('../fonts/montserrat/Montserrat-Hairline.svg#Montserrat-Hairline') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../fonts/montserrat/Montserrat-Bold.eot');
+	src: local('../fonts/montserrat/Montserrat Bold'), local('Montserrat-Bold'),
+		url('../fonts/montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/montserrat/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
+		url('../fonts/montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url('../fonts/montserrat/Montserrat-Regular.eot');
+	src: local('../fonts/montserrat/Montserrat Regular'), local('Montserrat-Regular'),
+		url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+		url('../fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: "euphemia_ucas_regular";
+  src: url("../fonts/euphemia_ucas_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "euphemia_ucas_italic";
+  src: url("../fonts/euphemia_ucas_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  color: #000;
+  font-family: "Montserrat Regular";
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.row {
+	margin-bottom: 1.4em;
+	max-width: 680px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 1.875em;
+}
+
+p {
+	font-family: "Montserrat Light";
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+.bold-this {
+	font-family: "Montserrat Bold";
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+a.orange {
+	color: #ff5c54;
+	text-decoration: underline;
+}
+
+figure {
+	margin: 0;
+}
+
+
+
+.top-pagination {
+	color: #000;
+	font-size: 10px;
+	margin-top: 2em;
+	text-align: center;
+}
+.top-pagination a {
+	color: #ff5a49;
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    height: 160px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-wrapper .header-branding {
+    top: 10px;
+    height: 80px;
+    width: 80px;
+    /* padding: 0 50%; */
+    /* text-align: center; */
+}
+.header-branding {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.header-wrapper .header-branding .square {
+    height: 80px;
+    width: 80px;
+}
+
+.header-branding .branding-text {
+    -webkit-transition: 0.3s opacity;
+    -ms-transition: 0.3s opacity;
+    transition: 0.3s opacity;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font: 10px/1 "Montserrat Bold";
+    left: 50%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    top: 100%;
+    white-space: nowrap;
+}
+
+.header .header-wrapper-navigation {
+    left: 20px;
+}
+
+.header .header-wrapper-navigation, .header .btn-search {
+    position: absolute;
+    top: 17px;
+}
+
+.home .header {
+	height: 120px!important;
+}
+
+
+/* SHRINKING HEADER */
+.padding-on-my-header {
+    padding: 17px 0.9375rem 62px 0.9375rem;
+    ul.title-area img {
+        margin: -5px 0 0 0;
+    }
+}
+
+/* SHRINKING HEADER */
+
+.burger {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    padding: 0;
+}
+
+.burger, .burger .line {
+    width: 28px;
+}
+
+.burger .line {
+    -webkit-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.burger .line, .burger .line::before, .burger .line::after {
+    background-color: #000;
+    display: block;
+    height: 2px;
+}
+
+.burger, .burger .line {
+    width: 28px;
+}
+
+.burger .line::before {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    transform: translateY(-9px);
+}
+.burger .line::before, .burger .line::after {
+    -webkit-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    transition: transform 0.3s;
+    content: "";
+}
+
+.burger .line, .burger .line::before, .burger .line::after {
+    background-color: #000;
+    display: block;
+    height: 2px;
+}
+
+.burger .line::after {
+    -webkit-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    transform: translateY(7px);
+}
+
+.header .btn-menu, .header .header-navigation-aux {
+    display: none;
+}
+
+.btn-menu {
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font: 14px/20px "Montserrat Bold";
+    height: 15px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 46px;
+}
+
+.main-content {
+    background: #f2f7fa;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    position: relative;
+    right: 0;
+    top: 65px;
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+.home #footer {
+	padding-top: 80px;
+}
+    
+#footer {
+	font-family: "Montserrat Bold";
+	background: #000;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	padding: 2em 2em 0 2em;
+	margin: 5em 0 0 0;
+	width: 100%;
+}
+
+#footer hr {
+	color: #fff;
+}
+
+#footer p {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+h3.footer-heading {
+	font-family: "Montserrat Bold";
+	font-size: 20px;
+	margin-bottom: 1em;
+}
+
+ul.footer-menu li {
+	font-family: "Montserrat Hairline";
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+ul.footer-menu li a, ul.footer-menu li p {
+	color: white;
+	transition: color 0.3s;
+	display: inline;
+	font: 10px "Montserrat Bold";
+	line-height: 30px;
+	letter-spacing: 1.3px;
+    padding: 10px 9px;
+}
+
+ul.footer-menu li a:hover {
+	color: #ff5b4f;
+}
+
+#footer .copyrights {
+    border-top: 1px solid #4D4D4D;
+    color: #515B58;
+    font-size: 12px;
+    padding: 25px 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* SOCIAL */
+.main-content .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.social {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.social > ul {
+    background: #fff;
+}
+.social > ul, .social ul {
+    border: 1px solid #000;
+    font-size: 0;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+.social.social-vertical li:first-child {
+    border: none;
+}
+
+.social.social-vertical li {
+    border-top: 1px solid #000;
+}
+.social li {
+    position: relative;
+}
+.social a, .social span {
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+}
+.social a, .social span, .social i::before {
+    -webkit-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+}
+.social.social-vertical i {
+    vertical-align: top;
+}
+.social i {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+}
+[class^="icon-"], [class*=" icon-"], .form-newsletter .gform_footer::before, .newsletter .gform_footer::before, .newsletter_widget .gform_footer::before, .button-prev::before, .button-next::before, .apiki-accordion-title::before, .gallery-photo-navigation::before, .select-explore-list a::after, .footer-navigation .ad-choices-link a:before, .category-list a::after, #breadcrumbs a::after {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* HOME PAGE */
+.home-page {
+	padding: 0;
+}
+
+.home footer {
+	margin-top: 0!important;
+}
+
+img#bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 65px;
+  left: -75%;
+}
+
+.user-options {
+	position: absolute;
+	bottom: 160px;
+	padding: 0 35%;
+	z-index: 1;
+}
+
+.user-options .row {
+	margin-bottom: 0.1em;
+}
+
+.user-options .button {
+    background-color: #ff5a49;
+    box-shadow: 3px 3px 0 #FFCDC5;
+}
+
+.user-options .button:hover, .button:focus {
+	background-color: #f77062;
+}
+
+#panel2 {
+	text-align: center;
+}
+
+.home .user-options .button {
+	min-height: 30px;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.orbit-container {
+	margin-top: 20px;
+}
+
+.orbit a {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    min-height: 600px;
+}
+/* HARE CARE */
+.hair-care {
+	min-height: 500px;	
+}
+
+.hair-care, .hair-style, .hair-care-single, .hair-style-single {
+	background: #fff;
+	margin-top: 8em;
+}
+
+.hair-care .row, .hair-style .row {
+	margin-bottom: 2em;
+}
+
+.card-simple {
+    background: #fff;
+    border: 1px solid #000;
+    height: 100%;
+    min-height: 240px;
+    position: relative;
+    box-shadow: 5px 5px 0 #b9e2c9;
+}
+
+.card-simple-info {
+	background: #fff;
+    padding: 29px 15px 16px;
+}
+
+.card-simple-info .i-title {
+    font: 14px/1.1 "Montserrat Bold";
+    letter-spacing: -1px;
+    padding-top: 2px;
+}
+
+.card-simple-info .i-by, .post-featured-info .i-by {
+    color: #97a8a4;
+    font-size: 14px;
+    letter-spacing: .75px;
+    margin-bottom: 4px;
+}
+
+.card-simple-info .i-by {
+    font: 10px/1 "Montserrat Bold";
+    text-transform: uppercase;
+}
+
+.card-simple::before, .card-simple  .shadow, .card-simple  .share-card {
+    position: absolute;
+}
+
+.card-simple .shadow {
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    background: #e8f5f1;
+    bottom: -9px;
+    display: block;
+    left: 9px;
+    position: absolute;
+    right: -9px;
+    top: 9px;
+    z-index: -1;
+}
+
+/* SINGLE PAGES */
+.entry-article-header-title {
+    font: 30px/1.22 "Montserrat Bold";
+    letter-spacing: 2px;
+    padding: 0;
+    margin-bottom: 1.5em;
+    text-align: left;
+    width: 90%;
+}
+
+.entry-content {
+    font-size: 1em;
+    margin: 2em 0;
+}
+
+.entry-excerpt p {
+	font-size: 18px;
+    letter-spacing: .2px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    width: 90%;
+}
+
+.entry-content p em {
+    font-style: italic;
+}
+
+.tabs {
+    margin: 2em 0 0 0;
+    list-style-type: none;
+    background: #fefefe;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 0 #FFCDC5;
+}
+
+.tabs-content {
+    background: #fefefe;
+    transition: all 0.5s ease;
+    border: none;
+    border-top: 0;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+.tabs-title {
+    position: relative;
+    float: left;
+    font-weight: bold;
+    width: 33.3%;
+    text-align: center;
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background: #ff5a49;
+    border-right: solid 1px #000;
+    color: #fff;
+}
+
+.tabs-title > a {
+	border-right: solid 1px #000;
+	height: 70px;
+	line-height: 1em;
+}
+
+.float-center {text-align: center;}
+
+/* ABOUT US */
+.page .page-simple-header {
+    text-align: center;
+}
+.page-simple-header {
+    margin-bottom: 70px;
+}
+
+.page-simple-title {
+    color: #ff5c54;
+    font: 50px/1 "Montserrat Bold";
+    text-align: center;
+    text-shadow: 3px 3px 0 #ffcdc5;
+    text-transform: uppercase;
+}
+
+.card-simple.bio {
+	margin: 40px auto;
+	margin-bottom: 0px;
+	padding: 1.2em;
+	min-height: 0;
+	height: auto;
+	width: 85%;
+	border: 1px solid #b9e2c9;
+}
+
+.card-simple.bio img {
+	margin-left: auto;
+	margin-right: auto;
+	float: none!important;
+}
+
+.card-simple.bio p {
+	font-size: 12px;
+}
+
+/* TERMS OF USE */
+
+/* NEWSLETTER SIGNUP */
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    display: block;
+    box-sizing: border-box;
+    font-family:"Montserrat Light";
+    width: 100%;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    box-shadow: none;
+    border-radius: 0;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;}
+
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
+    border: 1px solid #fff;
+    background-color: #000;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0.85em 1em;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    background-color: #f77062;
+    color: #fefefe;
+}
+
+.button:hover, .button:focus {
+    background-color: #b9e2c9;
+    color: #fefefe;
+}
+
+.btn-s-wrapper {
+    margin: 100px 0 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.btn-s-wrapper::before {
+    background: #000;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+}
+
+.btn-s {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.btn-s .btn-s-text {
+    -webkit-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+    background: #ff5b4f;
+    box-shadow: 5px 5px 0 #FFCDC5;
+    color: #fff;
+    display: block;
+    font: 12px;
+    height: 36px;
+    letter-spacing: 1.85px;
+    padding: 10px 23px 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 230px;
+    z-index: 2;
+}
