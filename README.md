@@ -1,2 +1,0 @@
-# ATH
-All Things Hair
